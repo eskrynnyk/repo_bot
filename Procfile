@@ -1,1 +1,1 @@
-bot: python UMBot3.py
+worker: python UMBot3.py
