@@ -1,1 +1,1 @@
-bot python UMBot3.py
+web: gunicorn UMBot3.py:app
