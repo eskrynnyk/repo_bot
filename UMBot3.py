@@ -15,5 +15,5 @@ def receive_update():
     if request.method == "POST":
         print(request.json)
         chat_id = request.json["message"]["chat"]["id"]
-        send_message('Привет, я бот')
+        send_message(chat_id, "pong")
     return {"ok": True}
