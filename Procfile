@@ -1,1 +1,1 @@
-web: gunicorn UMBot3:app
+web: gunicorn run_server:server
