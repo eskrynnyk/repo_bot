@@ -7,7 +7,7 @@ import os
 server = flask.Flask(__name__)
 
 
-@server.route('/' + TOKEN, methods=['POST'])
+@server.route('/' + '1136026078:AAHYkWNwfDiXtzzdShyHQ8EB2tkvFZxwzCM', methods=['POST'])
 def get_message():
     bot.process_new_updates([types.Update.de_json(flask.request.stream.read().decode("utf-8"))])
     return "!", 200
@@ -16,7 +16,7 @@ def get_message():
 @server.route('/', methods=["GET"])
 def index():
     bot.remove_webhook()
-    bot.set_webhook(url="https://{}.herokuapp.com/{}".format(APP_NAME, TOKEN))
+    bot.set_webhook(url="https://{}.herokuapp.com/{}".format('1136026078:AAHYkWNwfDiXtzzdShyHQ8EB2tkvFZxwzCM'))
     return "Hello from Heroku!", 200
 
 
